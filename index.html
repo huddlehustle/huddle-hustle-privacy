@@ -4,309 +4,364 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Huddle Hustle</title>
+    <meta name="description" content="How Huddle Hustle collects, uses and protects player data.">
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+        :root {
+            --ink: #1f2d3d;
+            --muted: #5b6b7c;
+            --ice: #eaf4fb;
+            --ice-edge: #b9d9ee;
+            --sea: #1c6ea4;
+            --sea-dark: #124f78;
+            --card: #ffffff;
+            --page: #f3f7fa;
+            --todo-bg: #fff1b8;
+            --todo-ink: #6b4e00;
         }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.65;
+            color: var(--ink);
+            background: var(--page);
+            margin: 0;
+            padding: 24px 16px 48px;
+        }
+        main {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 14px;
+            box-shadow: 0 2px 14px rgba(18, 79, 120, 0.08);
+            padding: 40px clamp(20px, 5vw, 48px);
         }
         h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+            font-size: 2rem;
+            line-height: 1.25;
+            margin: 0 0 8px;
+            color: var(--sea-dark);
         }
         h2 {
-            color: #2980b9;
-            margin-top: 30px;
+            font-size: 1.35rem;
+            color: var(--sea-dark);
+            margin: 44px 0 12px;
+            padding-top: 8px;
+            border-top: 1px solid var(--ice-edge);
+            scroll-margin-top: 16px;
         }
         h3 {
-            color: #34495e;
+            font-size: 1.05rem;
+            margin: 24px 0 8px;
         }
-        .header-info {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 30px;
+        p, li { font-size: 1rem; }
+        ul { padding-left: 22px; }
+        li { margin: 4px 0; }
+        a { color: var(--sea); }
+        a:hover { color: var(--sea-dark); }
+        .meta { color: var(--muted); margin: 0 0 24px; }
+        .summary {
+            background: var(--ice);
+            border: 1px solid var(--ice-edge);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 24px 0;
         }
-        .important {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
+        .summary h2 {
+            border: 0;
+            margin: 0 0 8px;
+            padding: 0;
+            font-size: 1.1rem;
         }
+        .summary ul { margin: 0; }
         .contact {
-            background-color: #d1ecf1;
-            border-left: 4px solid #17a2b8;
-            padding: 15px;
-            margin: 20px 0;
+            background: var(--ice);
+            border-left: 4px solid var(--sea);
+            border-radius: 6px;
+            padding: 14px 18px;
+            margin: 16px 0;
         }
-        ul {
-            margin-left: 20px;
+        nav.toc ol {
+            columns: 2;
+            column-gap: 32px;
+            padding-left: 22px;
+            margin: 8px 0 0;
         }
-        a {
-            color: #3498db;
-            text-decoration: none;
+        nav.toc li { break-inside: avoid; }
+        @media (max-width: 600px) {
+            nav.toc ol { columns: 1; }
+            h1 { font-size: 1.6rem; }
         }
-        a:hover {
-            text-decoration: underline;
+        .table-wrap { overflow-x: auto; margin: 12px 0; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.95rem;
         }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #ecf0f1;
+        th, td {
+            text-align: left;
+            vertical-align: top;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--ice-edge);
+        }
+        th { background: var(--ice); }
+        .todo {
+            background: var(--todo-bg);
+            color: var(--todo-ink);
+            padding: 0 4px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid var(--ice-edge);
+            color: var(--muted);
+            font-size: 0.9rem;
             text-align: center;
-            color: #7f8c8d;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🐧 Privacy Policy for Huddle Hustle</h1>
-        
-        <div class="header-info">
-            <p><strong>Effective Date:</strong> 21.11.2025</p>
-            <p><strong>Last Updated:</strong> 21.11.2025</p>
-        </div>
+<main>
+    <h1>Huddle Hustle Privacy Policy</h1>
+    <p class="meta"><strong>Last updated:</strong> 13 November 2026</p>
 
-        <h2>1. Introduction </h2>
-        <p>Welcome to Huddle Hustle! This privacy policy explains how Huddle Hustle Team ("we," "us," or "our") collects, uses, and protects information when you use our mobile game Huddle Hustle (the "Game").</p>
-        
-        <p>We are committed to protecting the privacy of all our players, especially children. This Game is designed to be family-friendly and safe for all ages.</p>
+    <p>This policy explains what information the mobile game <strong>Huddle Hustle</strong> (the "Game") collects, why, who we share it with, and the choices you have. It applies to the Game on Android and iOS and to this website.</p>
 
-        <div class="contact">
-            <p><strong>Developer Information:</strong><br>
-            Huddle Hustle Team<br>
-            Knyazhevo, Sofia, Bulgaria<br>
-            Email: <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a></p>
-        </div>
-
-        <h2>2. Information We Collect</h2>
-        
-        <h3>2.1 Information Collected Automatically</h3>
-        <p>When you play Huddle Hustle, we automatically collect:</p>
+    <section class="summary" aria-labelledby="summary-title">
+        <h2 id="summary-title">The short version</h2>
         <ul>
-            <li><strong>Anonymous Player ID</strong>: A unique identifier assigned by our service provider (PlayFab) to recognize your device</li>
-            <li><strong>Game Progress Data</strong>: Your level completion, rescued penguins, unlocked achievements, and game statistics</li>
-            <li><strong>Purchase History</strong>: Records of your Rescue Pass purchase (if made) for transaction verification</li>
-            <li><strong>Game Analytics</strong>: General gameplay data such as session length, levels played, and in-game actions (collected through PlayFab)</li>
-            <li><strong>Device Information</strong>: Basic technical information like device type, operating system version, and game version for technical support and bug fixes</li>
+            <li>You can play without creating an account or giving us your name or email. We never ask for them.</li>
+            <li>We store your game progress and gameplay data with our backend provider, Microsoft PlayFab, so the Game works across sessions and devices and so we can improve it.</li>
+            <li>The Game shows ads through Google AdMob. Where the law requires it, ads are only personalised if you agree, and you can change your choice at any time.</li>
+            <li>Purchases are handled by Google Play and the Apple App Store. We never see your payment details.</li>
+            <li>We do not sell your personal information. We do not share personal information with our charity partner ASOC.</li>
+            <li>The Game is intended for players aged 13 and over.</li>
+            <li>You can ask us for a copy of your data or to delete it at any time: <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a>.</li>
         </ul>
+    </section>
 
-        <div class="important">
-            <strong>This automatic data collection applies to all players, including children.</strong>
-        </div>
+    <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ol>
+            <li><a href="#who-we-are">Who we are</a></li>
+            <li><a href="#what-we-collect">Information we collect</a></li>
+            <li><a href="#how-we-use">How we use it and why</a></li>
+            <li><a href="#ads">Ads and your choices</a></li>
+            <li><a href="#rescue-pass">The Rescue Pass and ASOC</a></li>
+            <li><a href="#sharing">Who we share it with</a></li>
+            <li><a href="#transfers">International transfers</a></li>
+            <li><a href="#retention">How long we keep it</a></li>
+            <li><a href="#rights">Your rights</a></li>
+            <li><a href="#delete-data">Deleting your data</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#us-residents">US residents</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#changes">Changes to this policy</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ol>
+    </nav>
 
-        <h3>2.2 Information You Provide (Optional, Ages 13+ Only)</h3>
-        
-        <div class="important">
-            <strong>We do NOT collect email addresses from children under 13.</strong>
-        </div>
-
-        <p>If you indicate that you are <strong>13 years of age or older</strong>, you may <strong>optionally</strong> provide:</p>
-        <ul>
-            <li><strong>Email Address</strong>: For account recovery, cloud save synchronization across devices, and optional game updates/newsletters.</li>
-        </ul>
-
-        <p><strong>Optional Sharing with ASOC:</strong> We are proud to partner with **ASOC**. If you are 13 or older and provide an email address, you will be given the additional, explicit option to consent to share your email address with ASOC to receive updates and news about their charitable work. We will **only** share your email address with ASOC if you actively and explicitly opt-in to this sharing. You can revoke this consent at any time (see Section 9).</p>
-
-        <p><strong>Providing your email is completely optional.</strong> The Game functions fully without it.</p>
-
-        <h2>3. Age Verification</h2>
-        <p>Before requesting an email address, we ask users to confirm they are 13 years of age or older. If a user indicates they are under 13, we will NOT request or collect an email address.</p>
-        
-        <p>This age gate is designed to comply with the Children's Online Privacy Protection Act (COPPA) and similar regulations worldwide.</p>
-
-        <h2>4. How We Use Your Information</h2>
-        <p>We use the collected information for:</p>
-        <ul>
-            <li><strong>Game Functionality</strong>: Saving your progress, enabling gameplay features, and providing cloud saves</li>
-            <li><strong>Purchase Processing</strong>: Completing and verifying your Rescue Pass purchase through Google Play or Apple App Store</li>
-            <li><strong>Game Improvement</strong>: Analyzing gameplay patterns to improve game design and fix bugs</li>
-            <li><strong>Communication</strong>: Sending optional game updates and information about charitable donations (only if you opted in and are 13+)</li>
-            <li><strong>Technical Support</strong>: Responding to your questions and troubleshooting issues</li>
-        </ul>
-
-        <p><strong>We do NOT:</strong></p>
-        <ul>
-            <li>Sell your information to third parties</li>
-            <li>Use your information for advertising purposes</li>
-            <li>Share your email with anyone outside our necessary service providers **or our charity partner ASOC (unless you explicitly opt-in)**</li>
-        </ul>
-
-        <h2>5. Children's Privacy (COPPA Compliance)</h2>
-        <p>Huddle Hustle is designed to be safe for children. We take children's privacy seriously:</p>
-        <ul>
-            <li><strong>No Email Collection from Children</strong>: We do not knowingly collect email addresses or personal information from children under 13</li>
-            <li><strong>Age Gate</strong>: We verify age before requesting any personal information</li>
-            <li><strong>Anonymous Play</strong>: Children can enjoy the full game experience using only anonymous identifiers</li>
-            <li><strong>Parental Rights</strong>: Parents can contact us at <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a> to review, delete, or request information about data collected from their child</li>
-        </ul>
-
-        <p>If we discover we have inadvertently collected personal information from a child under 13 without proper consent, we will delete that information immediately.</p>
-
-        <h2>6. Third-Party Services</h2>
-        <p>We use the following third-party service to operate the Game:</p>
-
-        <h3>6.1 PlayFab (Microsoft)</h3>
-        <p>PlayFab provides player authentication, data storage, and game analytics. PlayFab may collect and process:</p>
-        <ul>
-            <li>Anonymous player IDs</li>
-            <li>Game progress and statistics</li>
-            <li>Device information</li>
-            <li>Gameplay analytics</li>
-        </ul>
-        <p>PlayFab's privacy policy: <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">https://privacy.microsoft.com/en-us/privacystatement</a></p>
-
-        <h3>6.2 Payment Processing</h3>
-        <p>In-app purchases (Rescue Pass) are processed through:</p>
-        <ul>
-            <li><strong>Google Play Store</strong> (for Android devices) - <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
-            <li><strong>Apple App Store</strong> (for iOS devices, future) - <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a></li>
-        </ul>
-        <p>We do not directly process or store your payment information. All transactions are handled by these platforms.</p>
-
-        <h3>6.3 Charity Partner - ASOC</h3>
-        <p>We are proud to partner with **ASOC**. If you are 13 or older and explicitly consent to the sharing of your email address, we will transfer your email to ASOC so they may send you updates on their charitable activities. This is entirely voluntary, and your consent is managed separately from the Game's core features.</p>
-        <p>ASOC will process your data according to their own privacy policy for the purpose of sending you charity updates. We encourage you to review ASOC's privacy policy.</p>
-
-        <h2>7. Data Storage and Security</h2>
-        <ul>
-            <li>Your game data is stored securely on PlayFab servers (Microsoft Azure infrastructure)</li>
-            <li>We use industry-standard security measures to protect your information</li>
-            <li>Anonymous player data is retained as long as you use the Game</li>
-            <li>Email addresses (if provided, 13+ only) are stored securely and retained until you request deletion</li>
-        </ul>
-
-        <p><strong>Data Retention:</strong></p>
-        <ul>
-            <li>Game progress: Retained while you actively use the Game</li>
-            <li>Purchase records: Retained as required by law and for customer support</li>
-            <li>Emails: Retained until you opt out or request deletion</li>
-        </ul>
-
-        <h2>8. International Data Transfers</h2>
-        <p>The Game is operated from Bulgaria (European Union). However, our service providers (PlayFab/Microsoft) may store and process data on servers located in various countries, including the United States.</p>
-
-        <p>By using the Game, you consent to the transfer of your information to countries that may have different data protection laws than your country of residence.</p>
-
-        <p><strong>For EU/EEA Users:</strong> We ensure appropriate safeguards are in place for international data transfers, in compliance with GDPR.</p>
-
-        <h2>9. Your Rights and Choices</h2>
-        <p>You have the following rights regarding your information:</p>
-
-        <h3>All Users:</h3>
-        <ul>
-            <li><strong>Access</strong>: Request a copy of your data by emailing penguinrescuegame@gmail.com</li>
-            <li><strong>Deletion</strong>: Request deletion of your data (note: this will erase your game progress)</li>
-            <li><strong>Opt-Out of Analytics</strong>: Contact us to opt out of gameplay analytics</li>
-        </ul>
-
-        <h3>Users 13+ Who Provided Email:</h3>
-        <ul>
-            <li><strong>Update Email</strong>: Change your email through in-game settings or by contacting us</li>
-            <li><strong>Unsubscribe</strong>: Opt out of newsletters/updates via unsubscribe links in emails</li>
-            <li>**Opt-Out of Sharing with ASOC**: You may withdraw your consent for us to share your email with ASOC at any time by contacting us. To unsubscribe from updates you already receive from ASOC, you must contact them directly.</li>
-            <li><strong>Delete Email</strong>: Request email deletion while keeping game progress</li>
-        </ul>
-
-        <h3>Parents/Guardians:</h3>
-        <ul>
-            <li>Review information collected from your child</li>
-            <li>Request deletion of your child's data</li>
-            <li>Refuse further collection of your child's information</li>
-        </ul>
-
-        <div class="contact">
-            <p><strong>To exercise any of these rights, contact us at:</strong><br>
-            <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a></p>
-        </div>
-
-        <h2>10. European Users (GDPR)</h2>
-        <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have additional rights under GDPR:</p>
-
-        <ul>
-            <li><strong>Legal Basis for Processing</strong>: We process your data based on:
-                <ul>
-                    <li>Legitimate interests (game functionality, analytics)</li>
-                    <li>Consent (optional email collection for 13+, **including explicit consent to share with ASOC**)</li>
-                    <li>Contractual necessity (purchase processing)</li>
-                </ul>
-            </li>
-            <li><strong>Right to Lodge a Complaint</strong>: You may file a complaint with your local data protection authority</li>
-            <li><strong>Data Protection Officer</strong>: For GDPR-related inquiries, contact penguinrescuegame@gmail.com</li>
-        </ul>
-
-        <h2>11. California Users (CCPA)</h2>
-        <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA):</p>
-        <ul>
-            <li>We do not sell personal information</li>
-            <li>You may request disclosure of information collected and shared</li>
-            <li>You may request deletion of your information</li>
-            <li>You have the right to non-discrimination for exercising your privacy rights</li>
-        </ul>
-
-        <p><strong>To exercise CCPA rights, email:</strong> <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a></p>
-
-        <h2>12. Changes to This Privacy Policy</h2>
-        <p>We may update this privacy policy from time to time to reflect changes in:</p>
-        <ul>
-            <li>Our practices</li>
-            <li>Legal requirements</li>
-            <li>Game features</li>
-        </ul>
-
-        <p><strong>When we make changes:</strong></p>
-        <ul>
-            <li>We will update the "Last Updated" date at the top of this policy</li>
-            <li>For significant changes, we will notify you through the Game or via email (if provided)</li>
-            <li>Continued use of the Game after changes constitutes acceptance of the updated policy</li>
-        </ul>
-
-        <h2>13. The Rescue Pass and Charitable Donations</h2>
-        <p>When you purchase the Rescue Pass:</p>
-        <ul>
-            <li>Your transaction is processed by Google Play or Apple App Store</li>
-            <li>We receive limited transaction information (purchase confirmation, no payment details)</li>
-            <li>50% of proceeds from final milestone completions are donated to charity</li>
-            <li>Donation records are maintained separately from player data</li>
-            <li>You may request information about charitable donations at penguinrescuegame@gmail.com</li>
-        </ul>
-
-        <p><strong>We do not collect or store your payment card information.</strong></p>
-
-        <h2>14. Contact Us</h2>
-        <div class="contact">
-            <p>If you have questions, concerns, or requests regarding this privacy policy or your data, please contact us:</p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a><br>
-                <strong>Developer:</strong> Huddle Hustle Team<br>
-                <strong>Location:</strong> Knyazhevo, Sofia, Bulgaria
-            </p>
-            <p><strong>For parents/guardians with questions about children's privacy, please reach out anytime.</strong></p>
-        </div>
-
-        <h2>15. Consent</h2>
-        <p>By using Huddle Hustle, you acknowledge that you have read and understood this privacy policy.</p>
-        <ul>
-            <li>For users under 13: Only anonymous data is collected</li>
-            <li>For users 13+: You may optionally provide an email address for enhanced features and to receive charity updates from ASOC (if you explicitly opt-in)</li>
-        </ul>
-
-        <p><strong>Thank you for playing Huddle Hustle and helping us proctect Antarctica!</strong> 🐧</p>
-
-        <div class="footer">
-            <p><em>This privacy policy is effective as of 21.11.2025 and applies to all users of Huddle Hustle.</em></p>
-        </div>
+    <h2 id="who-we-are">1. Who we are</h2>
+    <p>Huddle Hustle is developed by a small independent team based in Sofia, Bulgaria. The data controller responsible for your personal data is:</p>
+    <div class="contact">
+        <strong><span class="todo">[CONTROLLER NAME]</span></strong><br>
+        <span class="todo">[REGISTERED ADDRESS]</span>, Sofia, Bulgaria<br>
+        Email: <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a>
     </div>
+    <p>In this policy, "we", "us" and "our" mean the data controller above.</p>
+
+    <h2 id="what-we-collect">2. Information we collect</h2>
+    <p>We collect only what the Game needs to work, to be improved and to fund itself. We do not ask for your name, email address, phone number, contacts, photos or precise location.</p>
+
+    <h3>2.1 Game account and identifiers</h3>
+    <ul>
+        <li><strong>Player ID:</strong> when you first open the Game, our backend provider, PlayFab, creates an account with a random player ID. The account is linked to an identifier generated for your installation of the Game.</li>
+        <li><strong>Google Play Games or Game Center (optional):</strong> if you are signed in to Google Play Games (Android) or Game Center (iOS), the Game uses your player ID from that service to sign you in. This keeps your progress if you change or reinstall your device. You can play without signing in.</li>
+        <li><strong>Leaderboard name:</strong> if you take part in leaderboards (such as the Daily Expedition), your score is shown to other players together with your player name.</li>
+    </ul>
+
+    <h3>2.2 Game progress</h3>
+    <p>Your total of Rescued Penguins, high score, unlocked Milestones and Traits, tutorial progress and the results of each run (for example penguins rescued and score). Some of this is saved on your device so you can play offline, and is synced to our servers when you are online.</p>
+
+    <h3>2.3 Gameplay and device data</h3>
+    <ul>
+        <li><strong>Gameplay events:</strong> how you play, such as session start and length, runs played, how and where runs end, and which features you use.</li>
+        <li><strong>Device and technical data:</strong> device model, operating system and version, Game version, language, and error or crash information.</li>
+        <li><strong>IP address:</strong> received by our servers and providers whenever the Game connects to the internet. It is used to deliver the service and may be used to work out your approximate country. We do not use it to find your precise location.</li>
+    </ul>
+
+    <h3>2.4 Feedback you send</h3>
+    <p>If you use the in-game feedback option, we receive the text you write along with your player ID, the Game version and basic device information. <strong>Please don't include personal information</strong> such as your name, email address or phone number in your feedback.</p>
+
+    <h3>2.5 Purchases</h3>
+    <p>If you buy the Rescue Pass, Google Play or the Apple App Store processes the payment. We receive the purchase details we need to check that the purchase is genuine and to give you the Pass: the product, the order or transaction ID, a purchase receipt or token, the platform and the time of purchase. We also record which share of the Pass proceeds your Milestones have unlocked for ASOC (see <a href="#rescue-pass">section 5</a>). <strong>We never receive or store your card or payment details.</strong></p>
+
+    <h3>2.6 Advertising data</h3>
+    <p>If the Game shows you ads, Google AdMob collects information such as your device's advertising identifier (if available and allowed), IP address, device information and how you interact with ads. See <a href="#ads">section 4</a>. If you own the Rescue Pass, the Game shows no interstitial ads, and rewarded ads are never required.</p>
+
+    <h2 id="how-we-use">3. How we use it and why</h2>
+    <p>If you are in the European Economic Area (EEA), the UK or Switzerland, data protection law requires a legal basis for each use of your data. These are ours:</p>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr><th>What we do</th><th>Data used</th><th>Legal basis</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Run the Game: create your account, save and sync progress, sign you in, show leaderboards</td>
+                    <td>Identifiers, game progress, technical data</td>
+                    <td>Performing our contract with you (providing the Game)</td>
+                </tr>
+                <tr>
+                    <td>Check, deliver and restore purchases; handle refunds</td>
+                    <td>Purchase data, player ID</td>
+                    <td>Performing our contract with you</td>
+                </tr>
+                <tr>
+                    <td>Calculate and record the share of Rescue Pass proceeds that goes to ASOC, and keep accounting and tax records</td>
+                    <td>Purchase data, player ID, unlocked Milestones</td>
+                    <td>Legal obligation (accounting and tax law) and our legitimate interest in keeping accurate, auditable records of what goes to ASOC</td>
+                </tr>
+                <tr>
+                    <td>Improve and balance the Game, fix bugs, and prevent cheating and fraud</td>
+                    <td>Gameplay events, technical data, feedback</td>
+                    <td>Our legitimate interest in making a fair, working and enjoyable game</td>
+                </tr>
+                <tr>
+                    <td>Show non-personalised ads, and limit and measure them</td>
+                    <td>Technical data, IP address, ad interactions</td>
+                    <td>Our legitimate interest in funding a free game, and your consent where the law requires it for storing or accessing information on your device</td>
+                </tr>
+                <tr>
+                    <td>Show personalised ads</td>
+                    <td>Advertising identifier, technical data, ad interactions</td>
+                    <td>Your consent, which you can withdraw at any time</td>
+                </tr>
+                <tr>
+                    <td>Answer your messages and requests</td>
+                    <td>Whatever you send us, player ID</td>
+                    <td>Our legitimate interest in supporting players; legal obligation for privacy requests</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Where we rely on legitimate interests, you can object (see <a href="#rights">section 9</a>). We do not make decisions about you that have legal or similarly significant effects using only automated processing.</p>
+
+    <h2 id="ads">4. Ads and your choices</h2>
+    <p>Huddle Hustle is free to play, and ads help fund it. The ads are provided by <strong>Google AdMob</strong>.</p>
+    <ul>
+        <li><strong>EEA, UK and Switzerland:</strong> before ads are personalised, the Game asks for your consent using Google's consent message. If you don't agree, you may still see ads, but they won't be based on your personal data. You can change your choice at any time in the Game's settings under <strong>Privacy</strong>.</li>
+        <li><strong>iOS:</strong> the Game only accesses your device's advertising identifier (IDFA) if you allow it in Apple's App Tracking Transparency prompt. You can change this in your iPhone's <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+        <li><strong>Android:</strong> you can reset or delete your advertising ID, or opt out of personalised ads, in your device's <em>Settings → Google → Ads</em> (or <em>Settings → Privacy → Ads</em>, depending on your device).</li>
+    </ul>
+    <p>Google acts as an independent controller for the data it collects for advertising. Learn more in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a> and in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+    <h2 id="rescue-pass">5. The Rescue Pass and ASOC</h2>
+    <p>With the Rescue Pass, a share of the Pass proceeds goes to the <a href="https://www.asoc.org/" target="_blank" rel="noopener">Antarctic and Southern Ocean Coalition</a> (ASOC). The share grows as you reach big Milestones in the Game, up to the maximum shown on the purchase screen before you buy. A share you haven't unlocked doesn't go to ASOC.</p>
+    <p>To calculate this, we keep a record that links each purchase (order ID and platform) to your player ID and to the share your Milestones have unlocked. We use it to work out the amount owed to ASOC, to publish totals, and for our accounts.</p>
+    <p><strong>ASOC does not receive any personal information about you.</strong> We only report totals to ASOC, never individual players or purchases.</p>
+
+    <h2 id="sharing">6. Who we share it with</h2>
+    <p>We share personal data only with the service providers we need to run the Game, and when the law requires it. We do not sell your personal information.</p>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr><th>Recipient</th><th>Why</th><th>Privacy policy</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Microsoft</strong> (PlayFab and Azure)</td>
+                    <td>Backend: accounts, progress, gameplay events, purchase validation and our server functions and records. Processes data on our behalf.</td>
+                    <td><a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google</strong> (Google Play, Google Play Games Services)</td>
+                    <td>App distribution, payments, purchase verification and optional sign-in on Android.</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google</strong> (AdMob)</td>
+                    <td>Ads, as described in <a href="#ads">section 4</a>. Independent controller.</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google</strong> (Workspace)</td>
+                    <td>Internal records, such as purchase and ASOC share records. Processes data on our behalf.</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Apple</strong> (App Store, Game Center)</td>
+                    <td>App distribution, payments, purchase verification and optional sign-in on iOS.</td>
+                    <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>We may also disclose information if required by law or by a court or authority, to protect the rights and safety of our players or others, or as part of a sale or reorganisation of the Game (in which case this policy, or one at least as protective, will continue to apply).</p>
+
+    <h2 id="transfers">7. International transfers</h2>
+    <p>We are based in the European Union. Some of our providers process data outside the EEA, including in the United States. When this happens, we rely on an adequacy decision (such as the EU-US Data Privacy Framework, for providers certified under it) or on the European Commission's Standard Contractual Clauses. You can contact us for more information about these safeguards.</p>
+
+    <h2 id="retention">8. How long we keep it</h2>
+    <ul>
+        <li><strong>Game account and progress:</strong> for as long as your account exists. If you ask us to delete it, we delete it within 30 days.</li>
+        <li><strong>Gameplay events and feedback:</strong> only as long as we need them to analyse and improve the Game. After that they are deleted or aggregated so they no longer identify you.</li>
+        <li><strong>Purchase and ASOC share records:</strong> for as long as Bulgarian and EU accounting and tax law requires. These records are kept even if you delete your account, but they are then no longer linked to your game progress.</li>
+        <li><strong>Messages to us:</strong> for as long as we need to deal with your request, and afterwards only where we need a record of it, for example to show that we handled a privacy request.</li>
+    </ul>
+    <p>Data saved on your device stays there until you clear the Game's data or uninstall it.</p>
+
+    <h2 id="rights">9. Your rights</h2>
+    <p>Depending on where you live, and in all cases if you are in the EEA, the UK or Switzerland, you have the right to:</p>
+    <ul>
+        <li><strong>Access</strong> your data and get a copy of it;</li>
+        <li><strong>Correct</strong> data that is wrong;</li>
+        <li><strong>Delete</strong> your data (see <a href="#delete-data">section 10</a>);</li>
+        <li><strong>Restrict</strong> how we use it, or <strong>object</strong> to uses based on our legitimate interests;</li>
+        <li><strong>Port</strong> your data: receive it in a common machine-readable format;</li>
+        <li><strong>Withdraw consent</strong> at any time, for example for personalised ads, without affecting what happened before.</li>
+    </ul>
+    <p>To use any of these rights, email <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a>. We will reply within one month. We may ask for information to confirm the request is yours, for example details only the account holder would know.</p>
+    <p>You also have the right to complain to a data protection authority. In Bulgaria this is the <a href="https://www.cpdp.bg/en/" target="_blank" rel="noopener">Commission for Personal Data Protection</a> (2 Prof. Tsvetan Lazarov Blvd., Sofia 1592). You can also contact the authority in the country where you live or work. We'd appreciate the chance to sort out your concern first.</p>
+
+    <h2 id="delete-data">10. Deleting your data</h2>
+    <p>You can ask us to delete your Huddle Hustle account and the data linked to it at any time:</p>
+    <ol>
+        <li>Email <a href="mailto:penguinrescuegame@gmail.com?subject=Huddle%20Hustle%20data%20deletion">penguinrescuegame@gmail.com</a> with the subject "Data deletion".</li>
+        <li>Tell us which platform you play on (Android or iOS) and, if you can, your player ID or the Google Play Games or Game Center name you play with.</li>
+        <li>We confirm the request, delete your account, progress, gameplay events and feedback within 30 days, and let you know when it's done.</li>
+    </ol>
+    <p>Deletion is permanent: your Rescued Penguins, Milestones and Traits cannot be restored. Records we must keep by law (see <a href="#retention">section 8</a>) are kept until their legal retention period ends. A Rescue Pass you bought stays tied to your Google Play or App Store account, so you can restore it later. To also remove the data saved on your device, uninstall the Game.</p>
+
+    <h2 id="children">11. Children</h2>
+    <p>Huddle Hustle is intended for players aged 13 and over and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the Game, please contact us and we will delete their data.</p>
+
+    <h2 id="us-residents">12. US residents</h2>
+    <p>If you live in California or another US state with a consumer privacy law, you have the right to know what personal information we collect and how we use and disclose it; to access, correct and delete it; and not to be discriminated against for using these rights.</p>
+    <ul>
+        <li>We do not sell personal information for money.</li>
+        <li>Personalised ads through Google AdMob may count as "sharing" or "targeted advertising" under some state laws. You can opt out by turning off personalised ads in your device settings (see <a href="#ads">section 4</a>).</li>
+        <li>We do not use or disclose sensitive personal information.</li>
+    </ul>
+    <p>The categories of information we collect, and why, are described in sections 2 and 3. To make a request, email <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a>.</p>
+
+    <h2 id="security">13. Security</h2>
+    <p>Data is sent between the Game and our servers over encrypted connections. Only server functions we control can change your progress and purchase records, and access to our backend is limited to the team members who need it. No system is perfectly secure, but if a breach affects your data we will notify you and the authorities as the law requires.</p>
+
+    <h2 id="changes">14. Changes to this policy</h2>
+    <p>We update this policy when the Game or the law changes. The "Last updated" date at the top shows when it last changed. If a change significantly affects how we use your data, we will tell you in the Game before it takes effect and, where the law requires it, ask for your consent again.</p>
+
+    <h2 id="contact">15. Contact us</h2>
+    <div class="contact">
+        <p style="margin:0">For questions about this policy or your data, contact us at:<br>
+        <strong>Email:</strong> <a href="mailto:penguinrescuegame@gmail.com">penguinrescuegame@gmail.com</a><br>
+        <strong>Post:</strong> <span class="todo">[CONTROLLER NAME]</span>, <span class="todo">[REGISTERED ADDRESS]</span>, Sofia, Bulgaria</p>
+    </div>
+
+    <footer>
+        <p>Thanks for playing Huddle Hustle and helping protect Antarctica. 🐧</p>
+    </footer>
+</main>
 </body>
 </html>
